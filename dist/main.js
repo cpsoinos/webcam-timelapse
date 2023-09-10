@@ -13255,12 +13255,12 @@ var putObject = async (Key, Body, ContentType) => {
 };
 
 // src/main.ts
-var import_promises = require("fs/promises");
+var import_fs6 = require("fs");
 var main = async () => {
   const { filename, location, result } = await captureImage();
   const uploadResult = await putObject(`images/${filename}`, result, "image/jpeg");
   console.log(uploadResult);
-  await (0, import_promises.unlink)(location);
+  (0, import_fs6.unlinkSync)(location);
 };
 main();
 /*! Bundled license information:
