@@ -6,8 +6,12 @@ import { unlinkSync } from 'fs'
 const main = async () => {
   const { filename, location, result } = await captureImage()
 
-  const uploadResult = await putObject(`images/${filename}`, result, 'image/jpeg')
-  console.log(uploadResult)
+  try {
+    await putObject(`images/${filename}`, result, 'image/jpeg')
+    console.log('Uploaded image to R2: ', `images/${filename}`)
+  } catch (err) {
+    console.error(err)
+  }
   unlinkSync(location)
 }
 
