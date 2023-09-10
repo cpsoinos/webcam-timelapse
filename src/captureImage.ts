@@ -12,6 +12,7 @@ export const captureImage = async () => {
     options: {
       width: 1920,
       height: 1080,
+      frames: 60,
       output: 'jpeg',
       saveShots: false
     },
