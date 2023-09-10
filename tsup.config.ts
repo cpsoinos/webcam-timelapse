@@ -6,6 +6,7 @@ export default defineConfig((options) => ({
   sourcemap: true,
   clean: true,
   format: ['cjs'],
+  target: 'node10',
   noExternal: ['@anthonylzq/node-webcam', '@aws-sdk/client-s3'],
   // minify: !options.watch
 }))
