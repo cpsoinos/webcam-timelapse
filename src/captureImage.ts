@@ -10,8 +10,8 @@ export const captureImage = async () => {
     type: platform(),
     returnType: 'buffer',
     options: {
-      width: 1920,
-      height: 1080,
+      // width: 1920,
+      // height: 1080,
       output: 'jpeg',
       saveShots: false
     },
