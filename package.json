@@ -1,7 +1,7 @@
 {
   "name": "webcam-timelapse",
   "version": "0.0.1",
-  "description": "",
+  "description": "A simple webcam timelapse script to capture images and upload to R2, designed to run on a Raspberry Pi",
   "main": "src/main.ts",
   "scripts": {
     "build": "tsup",
