@@ -7,5 +7,5 @@ export default defineConfig((options) => ({
   clean: true,
   format: ['cjs'],
   noExternal: ['@anthonylzq/node-webcam', '@aws-sdk/client-s3'],
-  minify: !options.watch
+  // minify: !options.watch
 }))
